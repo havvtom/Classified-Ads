@@ -1,0 +1,30 @@
+episode 2
+
+- Learnt Laravel installation
+- Should have composer installed globally
+- first command is -- composer require Laravel installer
+- Next command is laravel new (name of project)
+- To set up vue and auth scaffolding there is need for more commands
+  1. composer require laravel/ui --dev
+  2. php artisan ui vue --auth
+
+episode 3
+
+- downloaded nested sets package through packagist.org
+- Things to look at are the number of downloads and the creator as well as when it was last updated
+- (composer require kalnoy/nestedset) stood out yeayeahyeah
+
+episode 4
+
+- Configured mailtrap user detaials
+- I have an account alredy set up. Just needed to grab the ID and Password
+
+episode 5
+
+- Installed the debugbar
+- Installing is enough no need to register it in service providers
+- From laravel 5.5 service providers can be detected automatically
+
+episode 6
+
+-php artisan make:model Area -a creates model, migration, factory, controller and seeder
