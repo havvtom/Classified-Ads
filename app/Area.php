@@ -27,4 +27,9 @@ class Area extends Model
 
     	return 'slug';
     }
+
+    public function path()
+    {
+        return '/user/area/'.$this->slug;
+    }
 }

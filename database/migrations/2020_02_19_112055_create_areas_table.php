@@ -17,6 +17,7 @@ class CreateAreasTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('slug')->unique();
+            $table->boolean('usable')->default(false);
             $table->nestedSet();
             $table->timestamps();
         });

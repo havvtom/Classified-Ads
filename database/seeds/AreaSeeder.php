@@ -17,23 +17,50 @@ class AreaSeeder extends Seeder
         
         		    'children' => [
         		        [
-        		            'name' => 'Johannesburg',
+        		            'name' => 'Gauteng',
         
         		            'children' => [
-        		                [ 'name' => 'Sandton' ],
-        		                [ 'name' => 'Ranburg' ],
-        		                [ 'name' => 'Fourways' ],
+
+        		                [ 'name' => 'Johannesburg',
+
+                                'children' =>[
+                                    [ 'name' => 'Sandton'],
+                                    [ 'name' => 'Fourways'],
+                                    [ 'name' => 'Randburg'],
+                                ]
+                                 ],        		                
         		            ],
         		        ],
-        		        [
-        		            'name' => 'Cape Town',
+                        [
+                            'name' => 'Kwazulu Natal',
         
-        		            'children' => [
-        		                [ 'name' => 'Waterfront' ],
-        		                [ 'name' => 'Greenpoint' ],
-        		                [ 'name' => 'Campsbay' ],
-        		            ],
-        		        ],
+                            'children' => [
+                                
+                                [ 'name' => 'Durban',
+
+                                'children' =>[
+                                    [ 'name' => 'Kwamashu'],
+                                    [ 'name' => 'Umhlanga'],
+                                    [ 'name' => 'Canelands'],
+                                ]
+                                 ],                             
+                            ],
+                        ], 
+                        [
+                            'name' => 'Western Cape',
+        
+                            'children' => [
+                                
+                                [ 'name' => 'Cape Town',
+
+                                'children' =>[
+                                    [ 'name' => 'Bellville'],
+                                    [ 'name' => 'Campsbay'],
+                                    [ 'name' => 'Seapoint'],
+                                ]
+                                 ],                             
+                            ],
+                        ],         		        
         		    ],
         		]);
     }

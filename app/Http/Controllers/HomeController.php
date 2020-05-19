@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\Area;
 
 class HomeController extends Controller
 {
@@ -19,6 +20,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        Area::whereNotNull('parent_id')->update(['usable'=>true]);
+        $areas = Area::get()->toTree();
+
+        return view('home', compact('areas'));
     }
 }

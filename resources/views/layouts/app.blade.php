@@ -5,9 +5,10 @@
         <div id="app">
             @include('layouts.partials._navigation')
 
-            <main class="py-4">
+            <div class="container">
+            	@include('layouts.partials._alerts')
                 @yield('content')
-            </main>
+            </div>
         </div>
     </body>
 </html>
